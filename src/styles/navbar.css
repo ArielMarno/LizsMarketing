@@ -1,0 +1,154 @@
+/*btn hamburguesa oculto*/
+.burguer {
+    display: none;
+}
+
+/*contenedor principal*/
+.navbar{
+    width: 100%;
+    min-height: 8vh;
+    background: var(--color-dark);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+}
+
+/*logo hogar*/
+.navbar_logo img{
+    width: 200px;
+    height: auto;
+}
+
+/*contenedor de links*/
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+/*links*/
+nav a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-family: var(--font-text);
+    color: #fff;
+}
+
+.link_orange:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--color-orange);
+}
+
+.link_pink:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--color-pink);
+}
+
+.link_fuchsia:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--color-fuchsia);
+}
+
+.link_violet:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--color-violet);
+}
+
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .navbar{
+        padding: 1rem 4rem;
+    }
+
+    .navbar_logo img{
+        width: 280px;
+        height: auto;
+    }
+
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .navbar{
+        padding: 1rem 3rem;
+    }
+
+    .navbar_logo img{
+        width: 250px;
+        height: auto;
+    }
+
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .navbar{
+        padding: 1rem;
+        position: fixed;
+        z-index: 9;
+    }
+
+    .navbar_logo img{
+        width: 250px;
+        height: auto;
+    }
+
+    nav{
+        margin: 0 2rem;
+    }
+
+    .links{
+        position: absolute;
+        top: -700px;
+        right: -2000px;
+        text-align: center;
+        margin-right: 1rem;
+    }
+
+    .links.active{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+        gap: 0.5rem;
+        position: fixed;
+        top: 92px;
+        right: 0;
+        background: #fff;
+    }
+
+    .links.active a{
+      color: var(--color-n);
+      padding: 0.7rem 1rem;
+    }
+
+    .links a:hover {
+       color: var(--color-c);
+    }
+      
+    .burguer{
+        display: flex;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+    .navbar_logo img{
+        width: 240px;
+        height: auto;
+    }
+
+    .links.active{
+        top: 79px;
+    }
+}

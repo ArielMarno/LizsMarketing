@@ -1,0 +1,24 @@
+:root {
+
+  /*variables para fuentes*/
+
+  --font-title: "Luckiest Guy", cursive;
+  --font-text: "Poppins", sans-serif;
+
+  /*variables para colores*/
+  --color-dark: #232323;
+  --color-light: #f2d5fb;
+  --color-orange: #fe881c;
+  --color-pink: #fe4b82;
+  --color-fuchsia: #f22ec6;
+  --color-violet: #c234f9;
+  
+
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #f2d5fb;
+}
