@@ -10,8 +10,8 @@ const Home = () => {
             Tu aliado digital</h1>
             <p>Descubrí como generar comunicaciones precisas y efectivas pueden ayudarte a llegar mucho mas lejos.</p>
             <div className='home_content-btn'>
-                <a href="" className='btn'>Contactarse</a>
-                <a href="https://drive.google.com/file/d/1_tx7SmMiSedjylZVM4NQyt203xkMCFJw/view?usp=sharing" className='btn_alt'>Mas Información</a>
+                <a href="http://wa.me/5491127461454" className='btn'>Contactarse</a>
+                <a href=" https://lizsmarketing.my.canva.site/" className='btn_alt'>Sobre Mi</a>
             </div>
         </div>
 

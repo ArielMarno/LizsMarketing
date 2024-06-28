@@ -1,13 +1,14 @@
+/*contenedor principal*/
 .home{
     width: 100%;
     min-height: 100svh;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background: var(--color-pink);
+    background: linear-gradient(123deg, rgba(254, 75, 130, 1) 0%, rgba(242, 46, 198, 1) 100%);
     gap: 3rem;
 }
 
-
+/*contenedor de titulo, subtitulo y botones*/
 .home_content{
     display: flex;
     flex-direction: column;
@@ -32,6 +33,7 @@
     color: #fff;
 }
 
+/*contenedor de botones*/
 .home_content-btn{
     display: flex;
     flex-direction: row;
@@ -39,6 +41,7 @@
     gap: 1.5rem;
 }
 
+/*contenedor de imagen*/
 .home_img{
     display: flex;
     flex-direction: row;
