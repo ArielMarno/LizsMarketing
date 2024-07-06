@@ -15,8 +15,8 @@ function App() {
      <Home />
      <Services />
      <About />
-     <Testimonies />
      <Portfolio />
+     <Testimonies />
      <Contact />
     </>
   )

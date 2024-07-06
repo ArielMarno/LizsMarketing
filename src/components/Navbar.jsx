@@ -20,6 +20,7 @@ const Navbar = () => {
       <nav className={`links ${click ? 'active' : ''}`}>
         <a href="#" className='link_orange'>Inicio</a>
         <a href="#servicios" className='link_pink'>Servicios</a>
+        <a href="#portfolio" className='link_light'>Portfolio</a>
         <a href="#testimonios" className='link_fuchsia'>Testimonios</a>
         <a href="#contacto" className='link_violet'>Contacto</a>
       </nav>

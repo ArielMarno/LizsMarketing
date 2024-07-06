@@ -22,7 +22,7 @@
 
 .services_title h2{
     font-family: var(--font-title);
-    font-size: 4rem;
+    font-size: clamp(2.5rem, -0.0714rem + 2.8571vw, 3.5rem);
     font-weight: 400;
 }
 
@@ -54,18 +54,18 @@
     border-radius: 20px;
     background: var(--color-light);
     padding: 1rem;
-    width: 500px;
+    width: 420px;
     height: 400px;
 }
 
 .card_services img{
-    width: 71px;
+    width: 69px;
     height: auto;
 }
 
 .card_services h4{
     font-family: var(--font-text);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
 }
@@ -73,10 +73,129 @@
 .card_services p{
     font-family: var(--font-text);
     max-width: 100%;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
     text-align: center;
+    max-width: 400px;
 }
 
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+    
+    /*contenedor de tarjetas*/
+    .services_card-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .services_title h2{
+        font-size: clamp(2rem, 0.7734rem + 1.9185vw, 2.5rem);
+    }
+    
+    .services_title p{
+        font-size: 1.4rem;
+        max-width: 700px;
+    }
+    
+    .card_services h4{
+        font-size: 1.6rem;
+    }
+    
+    .card_services p{
+        font-size: 1.1rem;
+    }
+
+    /*tarjetas*/
+    .card_services{
+        width: 380px;
+        height: 380px;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    /*contenedor principal*/
+    .services{
+        padding: 7rem 2rem;
+    }
+
+    .services_title p{
+        font-size: 1.3rem;
+    }
+    
+    .card_services h4{
+        font-size: 1.4rem;
+    }
+    
+    .card_services p{
+        font-size: 1rem;
+    }
+
+    /*tarjetas*/
+    .card_services{
+        width: 350px;
+        height: 350px;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    /*contenedor principal*/
+    .services{
+        padding: 7rem 1rem;
+    }
+
+    .services_title h2{
+        text-align: center;
+        max-width: 350px;
+        font-size: 2rem;
+    }
+
+    .card_services h4{
+        font-size: 1.5rem;
+    }
+
+    .services_title p{
+        font-size: 1.2rem;
+        font-weight: 500;
+        max-width: 450px;
+    }
+
+    /*contenedor de tarjetas*/
+    .services_card-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card_services p{
+        font-size: 1.1rem;
+    }
+
+    /*tarjetas*/
+    .card_services{
+        width: 95%;
+        height: 350px;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+
+    .services_title p{
+        max-width: 95%;
+    }
+
+    /*tarjetas*/
+    .card_services{
+        width: 100%;
+        height: 350px;
+    }
+}
 
 

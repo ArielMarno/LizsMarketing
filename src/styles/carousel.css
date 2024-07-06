@@ -1,5 +1,5 @@
 .wrapper {
-    max-width: 1150px;
+    max-width: 1185px;
     width: 100%;
     height: auto;
     position: relative;
@@ -26,23 +26,23 @@
   }
 
   .wrapper i:first-child{
-    left: -35px;
+    left: -30px;
   }
 
   .wrapper i:last-child{
-    right: -35px;
+    right: -30px;
   }
 
   .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
-    grid-auto-columns: calc((100% / 3));
     overflow-x: auto;
     border-radius: 20px;
     scroll-behavior: smooth;
     scrollbar-width: none;
     overflow-y: hidden;
     touch-action: none;
+    gap: 1rem;
   }
 
   .carousel::-webkit-scrollbar {
@@ -70,7 +70,6 @@
   }
 
   .carousel .card {
-    scroll-snap-align: start;
     height: 450px;
     width: 350px;
     list-style: none;
@@ -85,22 +84,69 @@
   }
 
 
-  /*
-  * {
-    background: #000 !important;
-    color: #0f0 !important;
-    outline: solid #f00 1px !important;
-  }
-    */
-  
-  @media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 9px);
-    }
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+  .wrapper {
+    max-width: 940px;
   }
 
-  @media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
-    }
+  .carousel .card {
+    height: 400px;
+    width: 300px;
+    margin: 0;
   }
+}
+
+
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1060px){
+
+    .wrapper {
+      max-width: 620px;
+    } 
+    
+}
+  
+  
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+      max-width: 300px;
+      scroll-behavior: smooth;
+    }
+    
+    .wrapper .carousel{
+      gap: 0rem;
+      overflow-y: hidden;
+      touch-action: auto;
+    }
+
+    .carousel .card {
+      height: 400px;
+      width: 300px;
+      margin: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+  .wrapper {
+    max-width: 300px;
+  }
+
+  .wrapper i{
+    font-size: 1.5rem;
+    margin: 0.5rem;
+  }
+
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 400px;
+    width: 300px;
+    margin: 0;
+  }
+}

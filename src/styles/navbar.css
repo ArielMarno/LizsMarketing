@@ -19,7 +19,7 @@
 
 /*logo hogar*/
 .navbar_logo img{
-    width: 200px;
+    width: 180px;
     height: auto;
 }
 
@@ -27,13 +27,13 @@
 nav{
     display: flex;
     flex-direction: row;
-    gap: 1rem;
+    gap: 0.7rem;
 }
 
 /*links*/
 nav a{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
     font-family: var(--font-text);
     color: #fff;
@@ -47,6 +47,11 @@ nav a{
 .link_pink:hover{
     transition: all ease-in-out 300ms;
     color: var(--color-pink);
+}
+
+.link_light:hover{
+    transition: all ease-in-out 300ms;
+    color: var(--color-light);
 }
 
 .link_fuchsia:hover{
@@ -70,7 +75,7 @@ nav a{
     }
 
     .navbar_logo img{
-        width: 280px;
+        width: 170px;
         height: auto;
     }
 
@@ -84,8 +89,12 @@ nav a{
     }
 
     .navbar_logo img{
-        width: 250px;
+        width: 160px;
         height: auto;
+    }
+
+    .links{
+        gap: 0.5rem;
     }
 
 }
@@ -100,7 +109,7 @@ nav a{
     }
 
     .navbar_logo img{
-        width: 250px;
+        width: 150px;
         height: auto;
     }
 
@@ -123,18 +132,40 @@ nav a{
         justify-content: right;
         gap: 0.5rem;
         position: fixed;
-        top: 92px;
+        top: 74px;
         right: 0;
-        background: #fff;
+        background: var(--color-dark);
+        padding: 0 0.5rem;
     }
 
     .links.active a{
-      color: var(--color-n);
-      padding: 0.7rem 1rem;
+      color: var(--color-white);
+      padding: 0.5rem 1rem;
     }
 
-    .links a:hover {
-       color: var(--color-c);
+    .links.active .link_orange:hover{
+        transition: all ease-in-out 300ms;
+        color: var(--color-orange);
+    }
+    
+    .links.active  .link_pink:hover{
+        transition: all ease-in-out 300ms;
+        color: var(--color-pink);
+    }
+    
+    .links.active  .link_light:hover{
+        transition: all ease-in-out 300ms;
+        color: var(--color-light);
+    }
+    
+    .links.active .link_fuchsia:hover{
+        transition: all ease-in-out 300ms;
+        color: var(--color-fuchsia);
+    }
+    
+    .links.active .link_violet:hover{
+        transition: all ease-in-out 300ms;
+        color: var(--color-violet);
     }
       
     .burguer{
@@ -146,11 +177,11 @@ nav a{
 @media only screen and (max-width:480px){
 
     .navbar_logo img{
-        width: 240px;
+        width: 140px;
         height: auto;
     }
 
     .links.active{
-        top: 79px;
+        top: 69px;
     }
 }

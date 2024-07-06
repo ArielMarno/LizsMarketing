@@ -1,5 +1,5 @@
 import '../styles/about.css';
-import values from '../assets/values.jpg';
+import values from '../assets/values.webp';
 
 const about = () => {
   return (
@@ -15,7 +15,7 @@ const about = () => {
             <div className='about_values'>
                 <div className='values'>
                     <h4>Integridad</h4>
-                    <p>Nos comprometemos a actuar con honestidad y transparencia en todas nuestras acciones, garantizando confianza y ética en cada uno de nuestros proyectos.</p>
+                    <p>Estamos comprometidos a actuar con honestidad y transparencia en todas nuestras acciones, garantizando confianza y ética en cada uno de nuestros proyectos.</p>
                 </div>
                 <div className='values'>
                     <h4>Creatividad</h4>
@@ -23,7 +23,7 @@ const about = () => {
                 </div>
                 <div className='values'>
                     <h4>Responsabilidad</h4>
-                    <p>Nos desenvolvemos con profesionalismo y cumplimos con los estándares más altos, garantizando resultados de calidad y un impacto positivo para tu negocio y comunidad.</p>
+                    <p>Trabajamos con profesionalismo y cumplimos con los estándares más altos, garantizando resultados de calidad y un impacto positivo para tu negocio y comunidad.</p>
                 </div>
 
             </div>

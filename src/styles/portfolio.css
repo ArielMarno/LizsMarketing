@@ -1,3 +1,4 @@
+/*contenedor principal*/
 .portfolio{
     width: 100%;
     min-height: 100svh;
@@ -9,6 +10,7 @@
     background: var(--color-white);
 }
 
+/*contenedor titulo y botones*/
 .portfolio_content{
     display: flex;
     flex-direction: row;
@@ -16,12 +18,14 @@
     justify-content: space-between;
 }
 
+/*titulo*/
 .portfolio_content h2{
     font-family: var(--font-title);
-    font-size: 4rem;
+    font-size: clamp(2.5rem, -0.0714rem + 2.8571vw, 3.5rem);
     font-weight: 400;
 }
 
+/*contenedor botones*/
 .portfolio_content-btn{
     display: flex;
     flex-direction: row;
@@ -29,6 +33,7 @@
     gap: 1rem;
 }
 
+/*botones*/
 .portfolio_content-btn .btn{
     background: var(--color-pink);
     color: var(--color-white);
@@ -59,24 +64,26 @@
 }
 
 
+/*contenedor grilla*/
 .portfolio_works{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0.5rem;
+    grid-template-columns:repeat(4, 1fr);
     align-items: center;
     justify-items: center;
+    gap: 0.5rem;
 }
 
+/*cajas*/
 .box-portafolio {
     position: relative;
-    width: min(100% - 10%, 600px);
+    width: min(100% - 0%, 800px);
     margin-inline: auto;
     height: auto;
     cursor: pointer;
 }
 
 
- 
+ /*imagen de fondo*/
 .box-portafolio img{
     width: 100%;
     height: 100%;
@@ -84,6 +91,7 @@
     border-radius: 20px;
 }
   
+/*filtro sobre la imagen*/
 .mask{
     display: grid;
     align-items: center;
@@ -100,11 +108,12 @@
     text-align: center;
     border-radius: 20px;
   }
-  
-  .mask a{
+
+/*link sobre el filtro para ir al portafolio*/
+.mask a{
     font-family: var(--font-text);
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 800;
     border: 2px solid #ffffff;
     padding: 1rem 1.5rem;
@@ -125,3 +134,104 @@
     opacity: 1;
     visibility: visible;
   }
+
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+    
+    .portfolio{
+        padding: 7rem 4rem;
+        gap: 4rem;
+    }
+
+    .portfolio_content h2{
+        max-width: 400px;
+        font-size: clamp(2rem, 0.7734rem + 1.9185vw, 2.5rem);
+    }
+
+    .portfolio .btn, .portfolio .btn_alt{
+        font-size: 1.1rem;
+    }
+
+    /*contenedor grilla*/
+    .portfolio_works{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+        gap: 3rem;
+    }
+
+    /*cajas*/
+    .box-portafolio {
+        width: min(100% - 0%, 600px);
+        height: auto;
+    }
+
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .portfolio{
+        padding: 7rem 3rem;
+        gap: 3rem;
+    }
+   
+    .portfolio_content{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+   }
+
+   .portfolio_content h2{
+    max-width: 100%;
+   }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+
+    .portfolio{
+        padding: 7rem 2rem;
+        gap: 3rem;
+    }
+
+    .portfolio_content h2{
+        max-width: 330px;
+    }
+
+     /*contenedor grilla*/
+     .portfolio_works{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    /*cajas*/
+    .box-portafolio {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio .btn, .portfolio .btn_alt{
+        font-size: 1rem;
+    }
+
+    .mask a{
+        font-size: 1.1rem;
+    }
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+    .portfolio_content h2{
+        font-size: 1.8rem;
+        max-width: 280px;
+       }
+    
+    .portfolio{
+        padding: 7rem 1rem;
+    }
+}   

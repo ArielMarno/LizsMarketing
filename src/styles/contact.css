@@ -12,7 +12,7 @@
     padding-bottom: 1.5rem;
 }
 
-/*contenedor de imagen y dataulario*/
+/*contenedor de imagen y formulario*/
 .contact_content{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +31,7 @@
 
 /*logo*/
 .contact_logo img{
-    width: 600px;
+    width: 550px;
     height: auto;
 }
 
@@ -42,7 +42,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 3rem;
+    gap: 2.5rem;
 }
 
 /*contenedor titulo y texto*/
@@ -56,13 +56,13 @@
 }
 
 .contact_data-title h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--color-white);
 }
 
 .contact_data-title p{
-    font-size: 1.5rem;
-    max-width: 680px;
+    font-size: 1.2rem;
+    max-width: 500px;
     color: var(--color-white);
 }
 
@@ -82,7 +82,7 @@
 }
 
 .contact_data-input input{
-    width: 550px;
+    width: 470px;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 500;
@@ -94,7 +94,6 @@
     color: grey;
     font-size: 1.5rem;
     font-weight: 600;
-
 }
 
 /*contenedor principal redes sociales*/
@@ -107,8 +106,14 @@
     font-family: var(--font-text);
 }
 
+.contact_data-input .btn{
+    padding: 1rem;
+    font-weight: 500;
+    border: none;
+}
+
 .contact_data-socials h3{
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--color-white);
 }
 
@@ -123,7 +128,7 @@
 
 /*icons links*/
 .contact_data-socials--links img{
-    width: 70px;
+    width: 48px;
     height: auto;
 }
 
@@ -135,9 +140,168 @@
     justify-content: flex-end;
     font-family: var(--font-text);
     color: var(--color-white);
+    font-size: 0.8rem;
 }
 
 .contact_copy p a{
     text-decoration: none;
     color: #ffe252;
+}
+
+
+/*diseño adaptable*/
+
+/*DESTOCKS*/
+@media only screen and (max-width:1440px){
+
+    .contact{
+        padding: 5rem 3rem;
+    }
+
+    .contact_content{
+        gap: 3rem;
+    }
+
+    /*logo*/
+    .contact_logo img{
+        width: 400px;
+        height: auto;
+    }
+
+    .contact_data-title h3{
+        font-size: 1.8rem;
+    }
+    
+    .contact_data-title p{
+        font-size: 1.1rem;
+        max-width: 400px;
+    }
+
+    .contact_data-input input{
+        width: 300px;
+        padding: 0.5rem;
+    }
+
+    .contact_data-socials h3{
+        font-size: 1.5rem;
+    }
+}
+
+/*NOTEBOOKS*/
+@media only screen and (max-width:1023px){
+
+    .contact_content{
+        grid-template-columns: 1fr;
+    }
+
+    .contact_data-title h3{
+        font-size: 1.6rem;
+    }
+
+    .contact_data-title h3 br{
+        display: none;
+    }
+    
+    .contact_data-title p{
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+
+    .contact_data-input input{
+        width: 500px;
+        padding: 1rem;
+    }
+
+    .contact_data-input .btn{
+        padding: 1rem;
+    }
+}
+
+/*TABLETS*/
+@media only screen and (max-width:768px){
+        
+    .contact{
+        padding: 5rem 2rem;
+    }
+
+    .contact_data-title h3{
+        font-size: 1.5rem;
+    }
+
+    .contact_data-title p{
+        font-size: 1.1rem;
+        max-width: 80%;
+    }
+
+
+    /*logo*/
+    .contact_logo img{
+        width: 300px;
+        height: auto;
+    }
+
+    .contact_data-input form{
+        gap: 0.5rem;
+    }
+
+    .contact_data-input input{
+        width: 280px;
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .contact_data-input ::-webkit-input-placeholder{
+        font-size: 1.2rem;
+    }
+
+    .contact_data-input .btn{
+        font-size: 1rem;
+    }
+
+    .contact_data-socials h3{
+        font-size: 1.4rem;
+    }
+
+    .contact_data-socials img{
+        width: 40px;
+    }
+
+    .contact_copy{
+        text-align: center;
+        font-size: 0.7rem;
+    }
+
+}
+
+/*SMARTH PHONES*/
+@media only screen and (max-width:480px){
+
+    .contact{
+        padding: 5rem 1rem;
+    }
+
+    .contact_data-title h3{
+        font-size: 1.3rem;
+    }
+
+    .contact_data-title p{
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    /*logo*/
+    .contact_logo img{
+        width: 250px;
+        height: auto;
+    }
+
+    .contact_data-input input{
+        width: 250px;
+        font-size: 1.1rem;
+    }
+
+    .contact_data-input ::-webkit-input-placeholder{
+        font-size: 1.1rem;
+    }
+
 }

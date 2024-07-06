@@ -30,9 +30,9 @@ const Contact = () => {
                     <h3>Nuestras Redes Sociales</h3>
                     <div className='contact_data-socials--links'>
                         <a href="http://wa.me/5491127461454"><img src={wsp} alt="whatsapp"/></a>
-                        <a href="https://www.linkedin.com/in/jesiielidiaz/"><img src={linkedin} alt="linkedin"/></a>
                         <a href="https://www.instagram.com/lizsmarketing/"><img src={ig} alt="instagram"/></a>
                         <a href="https://www.behance.net/elizabethdiaz13"><img src={be} alt="behance"/></a>
+                        <a href="https://www.linkedin.com/in/jesiielidiaz/"><img src={linkedin} alt="linkedin"/></a>
                     </div>
                 </div>
             </div>

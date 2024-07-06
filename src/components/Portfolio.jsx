@@ -9,7 +9,7 @@ import v7 from '../assets/Portfolio/v7.webp';
 
 const Portfolio = () => {
   return (
-    <div className='portfolio'>
+    <div className='portfolio' id='portfolio'>
 
         <div className='portfolio_content'>
             <h2>Algunos de nuestros trabajos</h2>
@@ -31,7 +31,7 @@ const Portfolio = () => {
             <div className="box-portafolio">
                 <img src={barrio} alt="logo" />
                 <div className="mask">
-                    <a href="">Barrio</a>
+                    <a href="https://www.behance.net/gallery/202176571/El-Barrio-Redes-Sociales">Barrio</a>
                 </div>  
             </div>
             
