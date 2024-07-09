@@ -19,7 +19,7 @@ const about = () => {
                 </div>
                 <div className='values'>
                     <h4>Creatividad</h4>
-                    <p>La creatividad es lo que impulsa a cada estrategia, permitiéndonos desarrollar soluciones innovadoras y originales que destacan en el mercado y capturan la atención de tu audiencia.</p>
+                    <p>La creatividad impulsa cada estrategia, permitiéndo desarrollar soluciones innovadoras y originales que destacan en el mercado y capturan la atención de tu audiencia.</p>
                 </div>
                 <div className='values'>
                     <h4>Responsabilidad</h4>
