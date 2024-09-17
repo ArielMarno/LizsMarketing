@@ -23,13 +23,13 @@
 .about_title h2{
     font-family: var(--font-title);
     font-size: clamp(2.5rem, -0.0714rem + 2.8571vw, 3.5rem);
-    font-weight: 400;
+    font-weight: 800;
     color: #fff;
 }
 
 .about_title p{
     font-family: var(--font-text);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 400;
     text-align: center;
     max-width: 60%;
@@ -78,15 +78,15 @@
 .values h4{
     font-family: var(--font-title);
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 600;
     color: #fff;
 }
 
 .values p{
     font-family: var(--font-text);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-weight: 500;
-    max-width: 75%;
+    max-width: 74%;
 }
 
 
@@ -199,12 +199,14 @@
 @media only screen and (max-width:480px){
 
     .about_title h2{
-        font-size: 1.7rem;
+        max-width: 100%;
+        font-size: 1.6rem;
+        font-weight: 800;
         text-align: center;
     }
 
     .about_title p{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         max-width: 650px;
     }
 }

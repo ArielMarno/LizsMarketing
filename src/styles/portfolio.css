@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 7rem 5rem;
-    gap: 5rem;
+    gap: 3rem;
     background: var(--color-white);
 }
 
@@ -22,7 +22,8 @@
 .portfolio_content h2{
     font-family: var(--font-title);
     font-size: clamp(2.5rem, -0.0714rem + 2.8571vw, 3.5rem);
-    font-weight: 400;
+    font-weight: 800;
+    color: var(--color-dark);
 }
 
 /*contenedor botones*/
@@ -147,7 +148,6 @@
     }
 
     .portfolio_content h2{
-        max-width: 400px;
         font-size: clamp(2rem, 0.7734rem + 1.9185vw, 2.5rem);
     }
 
@@ -181,12 +181,9 @@
     .portfolio_content{
         flex-direction: column;
         align-items: flex-start;
-        gap: 2rem;
+        gap: 1rem;
    }
 
-   .portfolio_content h2{
-    max-width: 100%;
-   }
 }
 
 /*TABLETS*/
@@ -198,7 +195,11 @@
     }
 
     .portfolio_content h2{
-        max-width: 330px;
+        font-weight: 700;
+    }
+
+    .portfolio_content-btn{
+        gap: 0.5rem;
     }
 
      /*contenedor grilla*/
@@ -227,11 +228,14 @@
 @media only screen and (max-width:480px){
 
     .portfolio_content h2{
-        font-size: 1.8rem;
-        max-width: 280px;
+        font-size: 2rem;
        }
     
     .portfolio{
         padding: 7rem 1rem;
+    }
+
+    .portfolio_content-btn a{
+        padding: 0.8rem;
     }
 }   

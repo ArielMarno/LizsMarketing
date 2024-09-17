@@ -2,8 +2,8 @@
 
   /*variables para fuentes*/
 
-  --font-title: "Luckiest Guy", cursive;
-  --font-text: "Poppins", sans-serif;
+  --font-title: "Poppins", sans-serif;
+  --font-text: "Inter", sans-serif;
 
   /*variables para colores*/
   --color-dark: #232323;
@@ -39,6 +39,7 @@ body{
   font-size: 1.2rem;
   font-weight: 500;
   border: 2px solid var(--color-light);
+  cursor: pointer;
 }
 
 

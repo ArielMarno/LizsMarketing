@@ -8,7 +8,7 @@ const Testimonies = () => {
     <div className='testimonies' id='testimonios'>
         <div className='testimonies_title'>
             <h2>Testimonios</h2>
-            <p>Estamos orgullosos de lo que hacemos y de como podemos aportar al crecimiento de diversos proyectos. Estos son algunos de los testimonios de nuestros clientes!</p>
+            <p>Estoy orgullosa de lo que hago y de cómo puedo aportar al crecimiento de diversos proyectos. Estos son algunos de los testimonios de mis clientes.</p>
         </div>
         <Carousel/>
     </div>

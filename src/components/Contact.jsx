@@ -17,12 +17,12 @@ const Contact = () => {
             <div className='contact_data'>
                 <div className='contact_data-title'>
                     <h3>¿Listo para llevar tu negocio <br />al siguiente nivel?</h3>
-                    <p>Dejamos tu email y nos contactaremos a la brevedada para despejar cualquier duda.</p>
+                    <p>Dejame tu email y me contactaré a la brevedad para despejarte cualquier duda.</p>
                 </div>
                 <div className='contact_data-input'>
-                    <form action="">
-                        <input type="text" placeholder='Ingresa tu email' />
-                        <a href="" className='btn'>Enviar</a>
+                    <form  action="https://formspree.io/f/xgvwvedj" method="POST">
+                        <input name='email' type="text" placeholder='Ingresa tu email' required/>
+                        <button type="submit" className='btn'>Enviar</button>
                     </form>
                 </div>
                 
@@ -38,7 +38,7 @@ const Contact = () => {
             </div>
         </div>
         <div className='contact_copy'>
-            <p>Copyright©2024 Liz’s Marketing. Todos los derechos reservados. Sitio web diseñado y desarrollado por <a href="https://sunfloweragencia.com/">SunFlower Agencia Digital</a>.</p>
+            <p>Copyright©2024 Liz’s Marketing - Todos los derechos reservados. Sitio web diseñado y desarrollado por <a href="https://sunfloweragencia.com/">SunFlower Agencia Digital</a>.</p>
         </div>
     </div>
   )

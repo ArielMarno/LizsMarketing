@@ -12,7 +12,7 @@ const Portfolio = () => {
     <div className='portfolio' id='portfolio'>
 
         <div className='portfolio_content'>
-            <h2>Algunos de nuestros trabajos</h2>
+            <h2>Algunos de mis trabajos</h2>
             <div className='portfolio_content-btn'>
                 <a href=" http://wa.me/5491127461454" className='btn'>Contactarse</a>
                 <a href="https://www.behance.net/elizabethdiaz13" className='btn_alt'>Ver Portafolio</a>

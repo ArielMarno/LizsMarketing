@@ -132,7 +132,7 @@ nav a{
         justify-content: right;
         gap: 0.5rem;
         position: fixed;
-        top: 74px;
+        top: 70px;
         right: 0;
         background: var(--color-dark);
         padding: 0 0.5rem;

@@ -268,7 +268,7 @@
 
     .contact_copy{
         text-align: center;
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
 }
@@ -296,7 +296,7 @@
     }
 
     .contact_data-input input{
-        width: 250px;
+        max-width: 230px;
         font-size: 1.1rem;
     }
 

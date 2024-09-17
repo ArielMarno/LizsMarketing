@@ -22,7 +22,7 @@
 .testimonies_title h2{
     font-family: var(--font-title);
     font-size: clamp(2.5rem, -0.0714rem + 2.8571vw, 3.5rem);
-    font-weight: 400;
+    font-weight: 800;
     text-align: center;
     color: var(--color-dark);
 }
@@ -67,6 +67,10 @@
 
 /*TABLETS*/
 @media only screen and (max-width:768px){
+
+    .testimonies h2{
+        font-weight: 700;
+    }
 
     .testimonies p{
         font-size: 1.2rem;
